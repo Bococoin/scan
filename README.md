@@ -1,4 +1,4 @@
-![Color-Wallet logo — spaceship blasting off](./public/img/main-logo-1024.png)
+![Boco-Wallet logo — spaceship blasting off](./public/img/main-logo-1024.png)
 
 # Welcome to Boco Scan!
 
@@ -6,7 +6,7 @@
 [Boco Explorer by Boco Coin](http://scan.bococoin.com/)
 
 
-## How to run Color Explorer
+## How to run Bococoin Explorer
 
 1. Copy `settings.json.default` to `settings.json`.
 2. Update the RPC and LCD URLs.
