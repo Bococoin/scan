@@ -2,7 +2,7 @@
 
 # Welcome to Boco Scan!
 
-## Project running on testnet
+## Project running on mainnet boco-02
 [Boco Explorer by Boco Coin](http://scan.bococoin.com/)
 
 
