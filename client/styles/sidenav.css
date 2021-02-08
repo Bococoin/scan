@@ -1,0 +1,16 @@
+#app .sidenav > div .nav-item__text,
+#app .sidenav i {
+    color: #fff !important;
+}
+
+#app .sidenav {
+    box-shadow: none !important;
+}
+
+#app .sidenav span:not(.nav-item__text) {
+    background-color: #fff !important;
+}
+
+#app [class*="sidenav---selected"] div .nav-item__text, #app [class*="sidenav---selected"] div i {
+    color: #a4355a !important;
+}

@@ -1,0 +1,130 @@
+#app {
+  color: #fff;
+  /* background: linear-gradient(to bottom, #14131d 0, #2b2a35 100vh); */
+  background: #14131d;
+  min-height: 100vh;
+}
+
+#app .navbar {
+  background-color: none !important;
+  box-shadow: none;
+}
+
+#header-search {
+  background-color: transparent !important;
+}
+
+#header-search > input {
+  background-color: white;
+}
+
+#header-search button, #header-search .btn-secondary {
+  background: #a4355a;
+  color: white;
+  margin-left: 1rem;
+  border-radius: 4px;
+}
+
+#header-search, #header-search > * {
+  border-radius: 4px;;
+}
+
+#footer {
+  background: #14131d !important;
+}
+
+#footer + .navbar-light {
+  background: #14131d !important;
+}
+
+#footer + .navbar-light .nav-item a {
+  color: white;
+}
+
+#footer + .navbar-light .nav-item a.is-active {
+  color: #a4355a;
+}
+
+.validator-info.row {
+  padding: 0.4rem;
+  text-align: left;
+}
+
+.validator-info.row .percents {
+  text-align: right;
+}
+
+.validator-list .header > div {
+  justify-content: center;
+  text-align: left !important;
+  text-transform: capitalize;
+}
+
+.validator-list .header > div.percents {
+  text-align: right !important;
+}
+
+nav#header {
+  line-height: 6rem;
+  background: #14131d;
+}
+
+#header #queryString {
+  border-radius: 4px;
+}
+
+#app #home {
+  margin-left: 0;
+}
+
+#home #transactions {
+  margin-left: 0 !important;
+  padding: 15px !important;
+}
+
+#wrapper {
+  padding-left: 12px;
+  padding-right: 8px;
+}
+
+#wrapper > div > div:first-child {
+  background-color: #454563;
+  padding: 20px !important;
+}
+
+#wrapper > div > div:first-child > .row {
+  margin: initial;
+}
+
+.table-name {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  vertical-align: top;
+}
+
+.noflex {
+  display: block !important;
+}
+
+@media screen and (max-width: 992px){
+  .mobile-padding-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 676px){
+  #wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #wrapper > div > div:first-child {
+    padding: 10px !important;
+  }
+
+  #app #home {
+    padding: 10px 0 !important;
+  }
+}

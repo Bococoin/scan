@@ -1,0 +1,31 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+build_front:
+  stage: build
+  script:
+    - apt-get update  && apt-get -y install curl gnupg
+    - curl https://install.meteor.com/ | sh
+    - meteor npm install
+    - chmod +x ./build.sh && ./build.sh
+  artifacts:
+    paths:
+      - bundle
+  only:
+    - master
+deploy:
+  image: alpine
+  stage: deploy
+  script:
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh && echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rav -e "ssh -p 2221" --delete bundle/ deploy@95.217.144.116:/app/bcc/scan/bundle/
+    - ssh  -p "2221" deploy@95.217.144.116 docker restart scan
+    - echo OK
+  only:
+    - master
+    

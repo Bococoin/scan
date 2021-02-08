@@ -1,0 +1,49 @@
+.table {
+    color: #fff;
+}
+
+
+#block-table,
+.transactions-list,
+.validator-list {
+    padding: 15px 30px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #191823;
+}
+#block-table .row.header,
+.transactions-list .row.header,
+.validator-list .row.header,
+.random-validators td,
+.random-validators thead th {
+    border: 0;
+    font-weight: 400;
+}
+.validator-list .row.header > div {
+    display: flex;
+    align-content: center;
+}
+#block-table .row,
+.transactions-list .row,
+.validator-list .row,
+.random-validators td {
+    font-weight: 100;
+    text-align: center;
+}
+
+#block-table .block-info,
+.transactions-list .tx-info,
+.validator-list .validator-info {
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#block-table .block-info:nth-child(odd),
+.transactions-list .tx-info:nth-child(odd),
+.validator-list .validator-info:nth-child(odd),
+.random-validators tr:nth-child(odd) {
+    border-radius: 6px;
+    background-color: #6b6a71;
+}

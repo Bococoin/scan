@@ -1,0 +1,17 @@
+{
+  "_id": "WWQ7SxAxKR94C4SZm",
+  "address": "boco10q5xkh2zd9wgn72n709tpatqh6097w5a2stg6w",
+  "available": 19154543699317,
+  "delegated": 5010000000000,
+  "unbonding": 6000000000,
+  "reward": 26975803224.286125,
+  "total": 24197519502541.285
+}
+
+const PriorityEnum = {
+  'total': {code: 0, dirKey: 'totalDir', name: 'total'},
+  'available': {code: 1, dirKey: 'availableDir', name: 'available'},
+  'delegated': {code: 2, dirKey: 'delegatedDir', name: 'delegated'},
+  'unbonding': {code: 3, dirKey: 'unbounedDir', name: 'unbonding'},
+  'rewards': {code: 4, dirKey: 'rewardsDir', name: 'rewards'},
+};
